@@ -1,6 +1,8 @@
 # Files inside tmp folder and mnist data
 tmp
 MNIST_data
+.idea/
+.vscode/
 
 
 # Byte-compiled / optimized / DLL files
