@@ -6,6 +6,11 @@ If you're not sure how just ask one of the project leads.
 
 Add your name, major, favorite programming language, github username, and anything else you'd like.
 
+# Discord
+
+https://discord.gg/zcKke7b
+
+
 ## Christopher Wang 
 Software Engineering, 3rd year, Python, AMA!
 
