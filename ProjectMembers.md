@@ -20,3 +20,6 @@ GitHub: christopher-wang
 Computer Science, 1st Year, Python, Java and C/C++
 
 GitHub: h4sohail
+
+## Julia Cai
+Computer Science, 3rd Year, Python and Racket
