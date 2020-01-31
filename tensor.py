@@ -1,5 +1,5 @@
 
-#   TfLearn version of DeepMNIST
+# TfLearn version of DeepMNIST
 # taking from https://www.tensorflow.org/get_started/mnist/pros
 from tensorflow.examples.tutorials.mnist import input_data
 import tensorflow as tf
@@ -7,23 +7,25 @@ import tensorflow as tf
 # Create input object which reads data from MNIST datasets.  
 # Perform one-hot encoding to define the digit
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
-sess = tf.InteractiveSession()
 
 # Define data shape
 image_width = 28
 image_height = 28
 number_of_classes = 10
 
+# Create a TensorFlow session
+sess = tf.InteractiveSession()
+
 # Define placeholders for MNIST input data
 x = tf.placeholder(tf.float32, shape=[None, image_width * image_height])
 y_ = tf.placeholder(tf.float32, [None, number_of_classes])  
 
 
-#We now define the weights W and biases b for our model. 
+# We now define the weights W and biases b for our model. 
 W = tf.Variable(tf.zeros([image_width * image_height, number_of_classes]))
 b = tf.Variable(tf.zeros([number_of_classes]))
 
-#Before Variables can be used within a session, they must be initialized using that session
+# Before Variables can be used within a session, they must be initialized using that session
 sess.run(tf.global_variables_initializer())
 
 # regression model
@@ -32,9 +34,8 @@ y = tf.nn.softmax(tf.matmul(x,W)+b)
 # loss function
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
 
-
 # Set training
-#TensorFlow has a variety of built-in optimization algorithms.
+# TensorFlow has a variety of built-in optimization algorithms.
 # For this example, we will use steepest gradient descent,
 # with a step length of 0.5, to descend the cross entropy.
 learning_rate = 0.5

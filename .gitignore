@@ -1,1 +1,6 @@
 MNIST_data/
+Output/
+.vscode
+__pycache__/
+venv/
+tmp/
