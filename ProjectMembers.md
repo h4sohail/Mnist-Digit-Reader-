@@ -20,3 +20,8 @@ GitHub: christopher-wang
 Computer Science, 1st Year, Python, Java and C/C++
 
 GitHub: h4sohail
+
+## Hasan Baig
+Computer Systems Engineering, 3rd Year, Java and JavaScript
+
+GitHub: Hasan-Baig
